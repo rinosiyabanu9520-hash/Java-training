@@ -1,0 +1,28 @@
+import java.util.*;
+interface Calculator
+{
+    void display(int a,int b);
+    void show(int a,int b);
+}   
+class Simple implements Calculator {
+
+    public void display(int a,int b)
+    {
+        System.out.println(a+b);
+    }
+    public void show(int a,int b){
+        System.out.println(a-b);
+    }
+}
+public class Main {
+     public static void main(String[]args) {
+         Scanner scan=new Scanner(System.in);
+         int a=scan.nextInt();
+         int b=scan.nextInt();
+         Simple ob=new Simple();
+         ob.display(a,b);
+         ob.show(a,b);
+         
+ 
+    }
+}
